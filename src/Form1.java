@@ -17,12 +17,12 @@ public class Form1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Este es el boton de Login\n");
-                String user = String.valueOf(contratxt.getText());
-                String pass = String.valueOf(usuariotxt.getText());
+                String pass = String.valueOf(contratxt.getText());
+                String user = String.valueOf(usuariotxt.getText());
                 String usuari = "David";
                 String contrase = "123";
 
-                if (user.equals(contrase) && pass.equals(usuari)) {
+                if ((user.equals(contrase) && (pass.equals(usuari)))) {
                     System.out.println("Ingreso al sistema");
                     JFrame frame = new JFrame("Bienvenido");
                     frame.setContentPane(new Form3().menu3);
