@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Form1 {
+public class Form1 extends JFrame {
     private JFormattedTextField usertxt;
     private JPasswordField contra1;
     private JButton loginButton;
@@ -31,6 +31,8 @@ public class Form1 {
                     frame.setPreferredSize(new Dimension(800, 600));
                     frame.setMinimumSize(new Dimension(800, 600));
                     frame.pack();
+                    frame.setVisible(true);
+                    dispose();
                 }else{
                     System.out.println("Ingrese correctamente");
                 }
