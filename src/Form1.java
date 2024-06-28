@@ -22,7 +22,7 @@ public class Form1 extends JFrame {
                 String usuari = "David";
                 String contrase = "123";
 
-                if ((user.equals(contrase) && (pass.equals(usuari)))) {
+                if ((user.equals(usuari) && (pass.equals(contrase)))) {
                     System.out.println("Ingreso al sistema");
                     JFrame frame = new JFrame("Bienvenido");
                     frame.setContentPane(new Form3().menu3);
